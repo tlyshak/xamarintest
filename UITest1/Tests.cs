@@ -16,20 +16,17 @@ namespace UITest1
         [SetUp]
         public void BeforeEachTest()
         {
-            // TODO: If the iOS app being tested is included in the solution then 
-            // add a reference to the android project from the project containing this file
             app = ConfigureApp
                     .Android
-                    // TODO: Update this path to point to your Android app and uncomment the
-                    // code if the app is not included in the solution.
-                    //.ApkFile ("..\..\..\Android\bin\Debug\UITestsAndroid.apk")
+                    .ApkFile (@"..\..\..\App3\App3.Android\bin\Debug\com.companyname.App3.apk")
                     .StartApp();
         }
 
         [Test]
         public void AppLaunches()
         {
-            app.Screenshot("First screen.");
+            AppResult[] results = app.WaitForElement(c => c.Marked("customLabel").Text("Hello"));
+            Assert.IsTrue(results.Any());
         }
     }
 }

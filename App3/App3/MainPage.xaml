@@ -6,7 +6,7 @@
     xmlns:local="clr-namespace:App3">
     <ContentPage.Content>
         <StackLayout>
-            <local:CustomLabel>Hello</local:CustomLabel>
+            <local:CustomLabel AutomationId="customLabel">Hello</local:CustomLabel>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

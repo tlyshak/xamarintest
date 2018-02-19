@@ -58,5 +58,15 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\App3\App3.Android\App3.Android.csproj">
+      <Project>{aea89a18-18aa-4cca-985c-1f365ac7844d}</Project>
+      <Name>App3.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\App3\App3\App3.csproj">
+      <Project>{3e1ab8e5-9dc1-4f4d-8292-e1b6c3f8167b}</Project>
+      <Name>App3</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
