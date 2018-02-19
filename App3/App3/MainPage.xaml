@@ -7,6 +7,7 @@
     <ContentPage.Content>
         <StackLayout>
             <local:CustomLabel AutomationId="customLabel">Hello</local:CustomLabel>
+            <Label Text="{Binding ModelText}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

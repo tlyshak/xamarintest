@@ -11,6 +11,7 @@ namespace App3
     {
         public MainPage()
         {
+            BindingContext = new MainPageViewModel();
             InitializeComponent();
         }
     }
